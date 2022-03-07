@@ -55,7 +55,7 @@ app.post("/create-research",upload.single("file"), (req, res)=>{
 })
 
 mongoose.connect(dbUrl).
-then(()=> app.listen(3000, ()=>console.log("Database Connected")))
+then(()=> app.listen(process.env.PORT, ()=>console.log("Database Connected")))
 
 
 
