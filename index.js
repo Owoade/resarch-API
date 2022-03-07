@@ -5,7 +5,7 @@ const mongoose = require("mongoose")
 const cors = require("cors");
 const path=require("path")
 const multer = require("multer")
-const dbUrl="mongodb+srv://Aishat:farayoola@project.rxaoe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const dbUrl=process.env.DB_URL
 
 
 app.use(express.static("public"));
